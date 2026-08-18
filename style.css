@@ -1,0 +1,139 @@
+:root {
+    --primary: #4a90e2;
+    --primary-hover: #357abd;
+    --secondary: #6c757d;
+    --bg: #f4f7f6;
+    --text: #333;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 6px rgba(0,0,0,0.1);
+    --danger: #d9534f;
+    --warning: #f0ad4e;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+.container { max-width: 1000px; margin: 0 auto; }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.hidden { display: none !important; }
+
+/* Botões Gerais */
+button { cursor: pointer; border-radius: 8px; font-weight: bold; border: none; transition: 0.2s; }
+.btn-primary { background: var(--primary); color: white; padding: 10px 20px; }
+.btn-secondary { background: var(--secondary); color: white; padding: 10px 15px; }
+.btn-edit { background: var(--warning); color: white; padding: 5px 10px; font-size: 0.8rem; }
+.btn-delete { background: var(--danger); color: white; padding: 5px 10px; font-size: 0.8rem; }
+
+/* Grid */
+.grid-materias, .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Card de Matéria */
+.materia-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.materia-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+.materia-actions { margin-top: 15px; display: flex; gap: 10px; justify-content: center; }
+
+/* --- ESTRUTURA DO FLASHCARD (FLIP ANIMATION) --- */
+.flashcard-container {
+    perspective: 1000px;
+    height: 200px;
+}
+
+.flashcard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/* Classe aplicada via JS para girar */
+.flashcard-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    background: var(--card-bg);
+}
+
+.flashcard-back {
+    transform: rotateY(180deg);
+    background-color: #f0f7ff;
+    border: 2px solid var(--primary);
+}
+
+/* Botões de ação no flashcard */
+.card-actions {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 5px;
+    z-index: 10; /* Garante que o botão seja clicável */
+}
+
+/* Estilo para o contador de cards dentro da matéria */
+.materia-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.materia-card:hover {
+    background-color: #f9f9f9;
+}
+
+.badge-count {
+    background-color: #e0e0e0;
+    color: #666;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.materia-info h3 {
+    margin: 0 0 5px 0;
+}

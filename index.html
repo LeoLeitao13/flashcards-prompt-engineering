@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- TELA 1: LISTA DE MATÉRIAS -->
+        <section id="view-materias">
+            <header>
+                <h1>📚 Meus Flashcards</h1>
+                <button id="btn-nova-materia" class="btn-primary">+ Nova Matéria</button>
+            </header>
+            <main id="lista-materias" class="grid-materias"></main>
+        </section>
+
+        <!-- TELA 2: LISTA DE FLASHCARDS (INICIALMENTE OCULTA) -->
+        <section id="view-flashcards" class="hidden">
+            <header>
+                <button id="btn-voltar" class="btn-secondary">← Voltar</button>
+                <h1 id="titulo-materia-ativa">Matéria</h1>
+                <button id="btn-novo-card" class="btn-primary">+ Novo Card</button>
+            </header>
+            <main id="lista-cards" class="grid-cards"></main>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
