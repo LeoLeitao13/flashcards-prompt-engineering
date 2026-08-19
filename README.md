@@ -32,7 +32,7 @@
 
 
 **Justificativa:** 
-Escolhemos o HTML/CSS/JS puro em vez de um framework porque simplifica o deploy (sem build step, sem configuração de base para GitHub Pages) e porque, sendo o menor projeto possível, fica mais fácil eu mesmo entender e explicar qualquer trecho do código na apresentação individual. Pedimos explicitamente código comentado e gerado em partes pequenas porque isso também favorece esse mesmo objetivo: acompanhar a lógica passo a passo em vez de receber um bloco grande e opaco de código.
+Escolhemos o HTML/CSS/JS puro em vez de um framework porque simplifica o deploy (sem build step, sem configuração de base para GitHub Pages). Pedimos explicitamente código comentado e gerado em partes pequenas porque isso também favorece esse mesmo objetivo: acompanhar a lógica passo a passo em vez de receber um bloco grande e opaco de código.
 
 ---
 
