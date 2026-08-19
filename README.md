@@ -43,10 +43,8 @@ Escolhemos o HTML/CSS/JS puro em vez de um framework porque simplifica o deploy 
 - **Técnica escolhida:** Chain-of-thought (cadeia de raciocínio).
   
 - **Por que essa técnica ajuda nesse caso específico:** A técnica foi utilizada para orientar o desenvolvimento do projeto de forma estruturada, fazendo com que a IA analisasse os requisitos e dividisse a implementação em etapas menores antes de gerar o código. Isso foi importante porque o sistema possui funcionalidades relacionadas entre si, como matérias e flashcards, além das operações de criar, listar, editar e excluir.
-Ao solicitar que a IA organizasse o problema em etapas, foi possível desenvolver primeiro a estrutura dos dados e, posteriormente, implementar as funcionalidades de forma gradual. Isso também facilitou a compreensão do código gerado pelo grupo, evitando receber uma implementação completa e complexa de uma única vez.
+Ao solicitar que a IA organizasse o problema em etapas, foi possível desenvolver primeiro a estrutura dos dados e, posteriormente, implementar as funcionalidades de forma gradual.
 Dessa forma, a técnica contribuiu principalmente para organizar a implementação, reduzir a complexidade das tarefas e facilitar a compreensão do código gerado.
-
-- **Evidência (print):** [inserir print do prompt sendo usado + resposta obtida]
 
 ---
 
