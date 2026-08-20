@@ -50,9 +50,10 @@ Dessa forma, a técnica contribuiu principalmente para organizar a implementaç�
 
 ## 5. Teste de curadoria de contexto
 
+Alteração solicitada: Adicionar uma contagem mostrando quantos flashcards existem no total dentro de cada matéria, exibida no card da matéria na tela de listagem.
+
 ### Versão A — arquivo/trecho inteiro colado no prompt
 
-Alteração solicitada: Alterar a função renderizarMaterias.
 
 ```
 
@@ -220,7 +221,7 @@ renderizarMaterias();
 - Evidência (print): <img width="1280" height="1094" alt="image" src="https://github.com/user-attachments/assets/b680384d-9c5e-4ddb-82cd-feaf4e70e22c" />
 
 
-### Versão B — apenas o trecho relevante
+### Versão B — apenas o trecho relevante (RenderizarMaterias)
 
 ```
 Aqui está a função do meu projeto que renderiza a lista de matérias
