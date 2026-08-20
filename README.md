@@ -219,6 +219,8 @@ renderizarMaterias();
 - Tokens de entrada: 2875
 - Tokens de saída: 1624
 - Evidência (print): <img width="1280" height="1094" alt="image" src="https://github.com/user-attachments/assets/b680384d-9c5e-4ddb-82cd-feaf4e70e22c" />
+IMPLEMENTAÇÃO DA CONTAGEM DE FLASHCARD:
+<img width="1280" height="341" alt="image" src="https://github.com/user-attachments/assets/4068eb95-90e6-4f4e-97bb-e7c86295f04c" />
 
 
 ### Versão B — apenas o trecho relevante (RenderizarMaterias)
@@ -250,7 +252,8 @@ dentro de cada matéria, exibida no card da matéria na tela de listagem.
 - Tokens de entrada: 250
 - Tokens de saída: 1465
 - Evidência (print): <img width="1600" height="1364" alt="image" src="https://github.com/user-attachments/assets/64bd6331-1b4e-4782-be37-bbe7c3ef2e11" />
-
+IMPLEMENTAÇÃO FINAL DA CONTAGEM DE FLASHCARD:
+<img width="1600" height="325" alt="image" src="https://github.com/user-attachments/assets/d5f45249-727e-40b4-8bd6-566a5fd9fb08" />
 
 ### Comparação
 
